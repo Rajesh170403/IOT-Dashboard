@@ -1,0 +1,97 @@
+body{
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.border{
+width: 380px;
+padding: 40px 30px 50px 30px;
+background: #fff;
+border-radius: 5px;
+text-align: center;
+opacity: 0.9;
+}
+.border header{
+color: red;
+font-size: 30px;
+font-weight: 500;
+}
+.border form{
+margin: 40px 0;
+}
+form .field{
+width: 100%;
+margin-bottom: 20px;
+}
+form .field .input-area{
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+form input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    caret-color:red;
+    border-radius: 5px;
+    border-color:blue;
+}
+.field .input-area i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.input-area .icon{
+    left: 15px;
+    color: blue;
+    transition: color 0.2s ease;
+}
+.input-area .error-icon{
+    right: 15px;
+    color: #dc3545;
+}
+form input::placeholder{
+    color: #bfbfbf;
+    font-size: 17px;
+}
+form .field .error-txt{
+    font-size: 20px;
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+}
+form .field .error{
+    display: none;
+}
+form .field.error .error{
+    display: block;
+}
+form .pass-txt{
+    text-align: left;
+    margin-top: -10px;
+}
+.border a{
+    font-size: 20px;
+    color: #5372F0;
+    text-decoration: none;
+}
+form input[type="submit"]{
+    height: 50px;
+    width: 30%;
+    margin-top: 30px;
+    color: #fff;
+    padding: 0;
+    border: none;
+    background: #5372F0;
+    cursor: pointer;
+}
+.sign-txt{
+font-size: 20px;
+}
